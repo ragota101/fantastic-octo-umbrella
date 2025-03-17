@@ -23,3 +23,14 @@ class Firma
         Console.WriteLine($"Год основания: {FoundationYear}");
     }
 }
+class Program
+{
+    static void Main()
+    {
+        // Создание объекта фирмы
+        Firma firma1 = new Firma("ООО Пример", "Москва, ул. Ленина, 1", 2000);
+
+        // Вывод информации о фирме
+        firma1.PrintInfo();
+    }
+}
