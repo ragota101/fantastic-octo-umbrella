@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using System.Xml.Linq;
 
 class Firma
 {
@@ -14,7 +16,12 @@ class Firma
         Address = address;
         FoundationYear = foundationYear;
     }
-
+    public Firma()
+    {
+        Name = "Неизвестно";
+        Address = "Неизвестно";
+        FoundationYear = 0;
+    }
     // Метод для вывода информации о фирме
     public void PrintInfo()
     {
